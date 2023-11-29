@@ -1,0 +1,104 @@
+:root {
+    --font-family: 'Montserrat', 'Noto Sans', 'Roboto', 'Ubuntu', sans-serif;
+    --background: #f0f0f0;
+    --text-color: #333;
+    --button-bg: #007bff;
+    --button-text: #fff;
+    --input-bg: #fff;
+    --input-border: #ccc;
+    --input-focus: #007bff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #232323;
+        --background2: #333;
+        --text-color: #f0f0f0;
+        --input-bg: #272727;
+        --input-border: #1e1e1e;
+    }
+}
+
+:root {
+    color: --text-color;
+}
+
+/* Apply light and dark theme */
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form styles */
+.alert-form {
+    background-color: var(--background2);
+    padding: 20px;
+    /* padding-right: 40px; */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 478px;
+}
+
+/* Heading styles */
+h2 {
+    font-family: var(--font-family);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+label {
+    font-family: var(--font-family);
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Input field styles */
+.input-field,
+.select-field {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    margin-top: 5px;
+
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.select-field {
+    width: 100%;
+}
+
+.input-field:focus,
+.select-field:focus {
+    outline: none;
+    border-color: var(--input-focus);
+}
+
+/* Button styles */
+.submit-button {
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-family: var(--font-family);
+    cursor: pointer;
+}
+
