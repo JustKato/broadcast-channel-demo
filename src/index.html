@@ -7,6 +7,8 @@
               content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet"
               href="./css/main.css" />
+        <link rel="stylesheet"
+              href="./css/toasts.css" />
 
         <link rel="preconnect"
               href="https://fonts.googleapis.com">
@@ -21,20 +23,27 @@
     </head>
 
     <body>
+        <div id="toast-container"></div>
         <div class="container">
-            <form class="alert-form">
+            <form autocomplete="off"
+                  class="alert-form"
+                  id="alert-creation-form">
                 <h2>Alert Configuration</h2>
                 <div class="form-group">
                     <label for="alert-title">Alert Title</label>
-                    <input type="text"
+                    <input autocomplete="off"
+                           type="text"
                            id="alert-title"
+                           name="title"
                            class="input-field"
                            required>
                 </div>
                 <div class="form-group">
                     <label for="alert-message">Alert Message</label>
-                    <textarea id="alert-message"
+                    <textarea autocomplete="off"
+                              id="alert-message"
                               style="resize: vertical;"
+                              name="message"
                               class="input-field"
                               rows="4"
                               required></textarea>
@@ -43,6 +52,7 @@
                     <label for="alert-type">Alert Type</label>
                     <select id="alert-type"
                             class="select-field"
+                            name="type"
                             required>
                         <option value="info">Information</option>
                         <option value="warning">Warning</option>
@@ -51,10 +61,13 @@
                 </div>
                 <div class="form-group">
                     <label for="alert-timeout">Alert Timeout (seconds)</label>
-                    <input type="number"
+                    <input autocomplete="off"
+                           type="number"
                            id="alert-timeout"
                            class="input-field"
                            min="1"
+                           name="timeout"
+                           max="30"
                            value="5"
                            required>
                 </div>

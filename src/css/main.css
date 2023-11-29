@@ -21,9 +21,9 @@
 
 :root {
     color: --text-color;
+    font-family: var(--font-family);
 }
 
-/* Apply light and dark theme */
 body {
     background-color: var(--background);
     color: var(--text-color);
@@ -41,7 +41,6 @@ body {
 .alert-form {
     background-color: var(--background2);
     padding: 20px;
-    /* padding-right: 40px; */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     width: 478px;
@@ -49,7 +48,6 @@ body {
 
 /* Heading styles */
 h2 {
-    font-family: var(--font-family);
     text-align: center;
     margin-bottom: 20px;
 }
@@ -61,7 +59,6 @@ h2 {
 
 /* Label styles */
 label {
-    font-family: var(--font-family);
     display: block;
     margin-bottom: 5px;
 }

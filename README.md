@@ -1,5 +1,7 @@
 # Broadcast Channel API Demo
 
+### [Demo Available](https://danlegt.com/projects)
+
 This is a small project that demonstrates how the browser's **Broadcast Channel API** works. The Broadcast Channel API allows you to communicate between different tabs or windows of a single browser, making it easy to send messages or data between them.
 
 In this demo, we have created a simple example of sending alerts from one tab/window to all the other open instances of the same web page. This can be useful for scenarios where you want to notify users across different tabs or windows of your web application about important events or updates.
