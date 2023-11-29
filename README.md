@@ -24,24 +24,20 @@ In this demo, we create a Broadcast Channel named "alerts" in TypeScript, and th
 
 To run this demo locally, follow these steps:
 
-1.  Clone this repository to your local machine:
 ```bash
+# 1.  Clone this repository to your local machine:
 git clone https://github.com/JustKato/broadcast-channel-demo
-```
-2.  Navigate to the project directory:
-```bash
+
+# 2.  Navigate to the project directory:
 cd broadcast-channel-demo
-```
-3.  Run the install command
-```bash
+
+# 3.  Run the install command
 npm install
-```
-4. You can either use the start command or build the project
-```bash
+
+# 4. You can either use the start command or build the project
 npm build # To build the project
 npm start # Run the project on localhost:1234
 ```
-    
 
 ## Example Usage
 
