@@ -37,7 +37,7 @@ cd broadcast-channel-demo
 npm install
 
 # 4. You can either use the start command or build the project
-npm build # To build the project
+npm run build # To build the project
 npm start # Run the project on localhost:1234
 ```
 
